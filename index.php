@@ -19,11 +19,11 @@ $errorMiddleware->setErrorHandler(HttpNotFoundException::class, function (Reques
  
 $app->get('/usuario', function (Request $request, Response $response, array $args) {
     $tarefas = [
-        ["id" => 1, "nome" => "leandro", "sobrenome" => "da silva", "login" => "leandro@gmail.com", "senha" => "lele02"],
-        ["id" => 2, "nome" => "rodrigo", "sobrenome" => "silveira","login" => "rodrigo@gmail.com",  "senha" => "rodrigo13"],
-        ["id" => 3, "nome" => "sophia", "sobrenome" => "moreira", "login" => "sophia@gmail.com",  "senha" => "sosolinda"],
-        ["id" => 4, "nome" => "amabili", "sobrenome" => "dos santos", "login" => "amabili@gmail.com",  "senha" => "luz04"],
-        ["id" => 5, "nome" => "luan", "sobrenome" => "pereira", "login" => "luan@gmail.com",  "senha" => "binho123"],
+        ["id" => 1, "nome" => "rafael", "sobrenome" => "da costa", "login" => "rafael@gmail.com", "senha" => "rafael2208"],
+        ["id" => 2, "nome" => "sthella", "sobrenome" => "lima","login" => "sthella@gmail.com",  "senha" => "sthella28"],
+        ["id" => 3, "nome" => "sophia", "sobrenome" => "silva", "login" => "sophia@gmail.com",  "senha" => "soso3030"],
+        ["id" => 4, "nome" => "malu", "sobrenome" => "rosa", "login" => "malu@gmail.com",  "senha" => "maluuu3"],
+        ["id" => 5, "nome" => "andré", "sobrenome" => "pereira", "login" => "andré@gmail.com",  "senha" => "dede508"],
  
     ];
     $response->getBody()->write(json_encode($tarefas));
@@ -60,4 +60,3 @@ $app->put('/usuario', function (Request $request, Response $response, array $arg
 });
  
 $app->run();
- 
